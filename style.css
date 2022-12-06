@@ -4,11 +4,14 @@
 body {
   margin: 0;
 }
+header {
+  margin-bottom: 10px;
+}
 .topbar {
   background-color: white;
   padding: 20px 15px;
   display: flex;
-  box-shadow:    0px 0px 10px rgb(0, 0, 0, 5)
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 5);
 }
 .nav {
   display: flex;
@@ -27,24 +30,24 @@ body {
   display: block;
 }
 .nav .nav-item .nav-link:hover {
-  color:darkred
+  color: darkred;
 }
 .nav .nav-link.active {
   color: white;
-  background-color: tomato 
+  background-color: tomato;
 }
 
 .topbar.topbar-football {
   background-image: url(/football.jpg);
 }
 .nav.nav-football .nav-link {
-color: white ;
-padding: 50px 30px;
-font-size: 20px;
-font-weight: 30px;
-font-family:'Rubik Mono One', sans-serif;;
+  color: white;
+  padding: 50px 30px;
+  font-size: 20px;
+  font-weight: 30px;
+  font-family: "Rubik Mono One", sans-serif;
 }
-.nav .nav-link.active {
+.nav.nav-football .nav-link.active {
   background-image: url(/ball.png);
   background-size: 100%;
   padding: 50px 30px;
@@ -53,7 +56,69 @@ font-family:'Rubik Mono One', sans-serif;;
   color: red;
 }
 .nav .nav-item .nav-link:hover {
-  color: red
+  color: red;
 }
-  
 
+.topbar.topbar-map {
+  background-image: url(/map.jpg);
+  padding: 0;
+}
+.nav.nav-map .nav-link {
+  color: rgb(59, 17, 17);
+  padding: 30px;
+  font-size: 10pxpx;
+  font-family: 'Diplomata SC', cursive;
+  transform: skew(-10deg);
+}
+.nav.nav-map .nav-link.active {
+  padding: 30px;
+  margin-left: 10px;
+  background-color: brown;
+  border-radius: 0;
+  transform: skew(-10deg);
+}
+
+.topbar.topbar-notebook {
+  background-color: rgb(45, 26, 26);
+  padding-bottom: 0;
+}
+.nav.nav-notebook .nav-link {
+  padding: 5px 20px 20px 20px;
+  color: white;
+  font-size: 20px;
+  font-family: monospace;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.nav.nav-notebook .nav-link.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: rgb(72, 103, 165);
+}
+.nav.nav-notebook .nav-link:hover {
+  color: greenyellow;
+}
+
+.topbar.topbar-cafe {
+  background-color: rgb(243, 151, 39);
+  padding: 0;
+}
+.nav.nav-cafe .nav-link {
+  font-size: 25px;
+  padding: 30px;
+  padding-bottom: 5px;
+  color: black;
+  border-bottom: 1px dashed white;
+  border-radius: 0;
+  font-family: "Dancing Script", cursive;
+}
+.nav.nav-cafe .nav-link.active {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 30px;
+  margin-left: 5px;
+}
+.nav.nav-cafe .nav-link:hover {
+  color: blue;
+}
